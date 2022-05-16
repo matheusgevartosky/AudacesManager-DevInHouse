@@ -1,0 +1,24 @@
+{
+  "modelos": [
+    {
+      "id": 1,
+      "nome": "Modelo 1",
+      "colecao": 1
+    },
+    {
+      "id": 2,
+      "nome": "Modelo 2",
+      "colecao": 1
+    }
+  ],
+  "colecoes": [
+    {
+      "id": 1,
+      "nome": "Coleção 1"
+    },
+    {
+      "id": 2,
+      "nome": "Coleção 2"
+    }
+  ]
+}
