@@ -1,0 +1,46 @@
+.main{
+    background-color: #e6eaff;
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 60%;
+    background-color: white;
+}
+
+.logo{
+    margin-bottom: 50px;
+}
+
+span{
+    margin-bottom: 50px;
+}
+
+.mat-form-field{
+    margin: 20px;
+    width:20rem;
+}
+button{
+    width: 20rem;
+}
+
+p{
+    margin-top: 20px;
+    color: #B4B6C1;
+}
+span{
+    color: #B4B6C1
+}
+
+a{
+    text-decoration: none;
+}
