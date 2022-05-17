@@ -21,13 +21,30 @@
       "nome": "Coleção 2"
     }
   ],
-  "usuarios":[
+  "usuarios": [
     {
       "nome": "teste",
       "empresa": "teste",
       "id": "teste@teste",
       "senha": "hdw56qde"
+    },
+    {
+      "nome": "teste",
+      "id": "teste@teste.com",
+      "empresa": "teste",
+      "senha": "hdw56qde"
+    },
+    {
+      "nome": "matheus",
+      "id": "matheus@matheus",
+      "empresa": "matheus",
+      "senha": "hdw56qde"
+    },
+    {
+      "nome": "pikini",
+      "id": "pikini@pikini",
+      "empresa": "teste",
+      "senha": "pikiniiiiii"
     }
   ]
-
 }

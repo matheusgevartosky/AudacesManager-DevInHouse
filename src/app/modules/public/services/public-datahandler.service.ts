@@ -17,8 +17,8 @@ export class PublicDatahandlerService {
     return this._http.get<any>(this.url+data)
   }
 
-  createUser(data: User[]): Observable<User>{
-    return this._http.put<User>(this.url, data)
+  createUser(data: User[]): Observable<any>{
+    return this._http.post<User[]>(this.url, data)
   }
 
 
