@@ -20,5 +20,14 @@
       "id": 2,
       "nome": "Coleção 2"
     }
+  ],
+  "usuarios":[
+    {
+      "nome": "teste",
+      "empresa": "teste",
+      "id": "teste@teste",
+      "senha": "hdw56qde"
+    }
   ]
+
 }

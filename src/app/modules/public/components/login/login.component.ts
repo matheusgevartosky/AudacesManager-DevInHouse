@@ -1,5 +1,8 @@
+import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { User } from '../../interface/user';
+import { PublicDatahandlerService } from '../../services/public-datahandler.service';
 
 
 
@@ -9,24 +12,37 @@ import { Validators, FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+
+  public userObj: any;
   hide = true;
+  errorMsg:boolean = false;
+
+
   formLogin: FormGroup = this.fb.group({
-    email: ['',[Validators.required, Validators.email]],
-    password: ['',[Validators.required, Validators.minLength(8)]]
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', [Validators.required, Validators.minLength(8)]]
   })
 
-  constructor(private fb:FormBuilder) { }
+  constructor(private fb: FormBuilder, private _service: PublicDatahandlerService) { }
 
   ngOnInit(): void {
   }
-  
-  getErrorMessage() {
-    if (this.formLogin.hasError('required')) {
-      return 'You must enter a value';
+
+  UserLogin() {
+    this._service.getUser(this.formLogin.value.email)
+      .subscribe((data: User[]) => {
+        this.userObj = data
+        console.log(this.userObj)
+      });
+    if (this.userObj == null) {
+       this.errorMsg = true;
+    } else if (this.userObj.senha != this.formLogin.value.password) {
+       this.errorMsg = true;
+    }else{
+      alert('foi')
     }
 
-    return this.formLogin.hasError('email') ? 'Not a valid email' : '';
+
   }
-  
 
 }

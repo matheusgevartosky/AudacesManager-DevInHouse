@@ -6,7 +6,7 @@
         <mat-form-field appearance="fill" [formGroup]="formLogin">
             <mat-label>Digite seu email</mat-label>
             <input matInput placeholder="pat@example.com" formControlName="email" required>
-            <mat-error *ngIf="formLogin.invalid">{{getErrorMessage()}}</mat-error>
+            <mat-error *ngIf="errorMsg">Usuário incorreto ou não cadastrado!</mat-error>
         </mat-form-field>
         <mat-form-field appearance="fill" [formGroup]="formLogin">
             <mat-label>Digite sua senha</mat-label>
@@ -15,9 +15,10 @@
                 [attr.aria-pressed]="hide">
                 <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
+            <mat-error *ngIf="errorMsg">Usuário incorreto ou não cadastrado!</mat-error>
         </mat-form-field>
-        
-        <button mat-raised-button color="primary">Entrar </button>
+
+        <button mat-raised-button color="primary" (click)="UserLogin()">Entrar </button>
     </div>
         <p>Não possui cadastro? <a routerLink="criar">Cadastrar</a></p>
         <p>Esqueceu a senha? <a routerLink="recuperar">Redefinir senha</a></p>
