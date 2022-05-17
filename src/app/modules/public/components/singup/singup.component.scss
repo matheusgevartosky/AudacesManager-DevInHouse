@@ -1,0 +1,32 @@
+.main{
+  background-color: #e6eaff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.singupContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 60%;
+  background-color: white;
+}
+
+.logo{
+  margin-bottom: 50px;
+}
+
+span{
+  margin-bottom: 40px;
+  color:#B4B6C1 ;
+}
+.mat-form-field, button{
+  margin: 10px;
+  width:20rem;
+
+}

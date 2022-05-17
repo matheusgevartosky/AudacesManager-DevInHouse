@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SingupComponent implements OnInit {
 
+  hide = true;
+
   constructor() { }
 
   ngOnInit(): void {

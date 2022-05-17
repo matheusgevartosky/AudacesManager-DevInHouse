@@ -1,1 +1,30 @@
-<p>singup works!</p>
+<div class="main">
+  <img src="../../../../../assets/images/small_logo.svg" class="logo">
+  <div class="singupContainer">
+    <h1>Cadastrar usuário</h1>
+    <span>Insira seus dados para criar sua conta</span>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Digite eu nome</mat-label>
+        <input matInput placeholder="Simple placeholder">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Digite Seu email</mat-label>
+        <input matInput placeholder="Simple placeholder">
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Digite o nome da empresa</mat-label>
+        <input matInput placeholder="Simple placeholder">
+      </mat-form-field>
+      <mat-form-field appearance="fill" >
+        <mat-label>Digite sua senha</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" >
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        </mat-form-field>
+      <button mat-raised-button color="primary">Cadastrar </button>
+
+  </div>
+</div>
