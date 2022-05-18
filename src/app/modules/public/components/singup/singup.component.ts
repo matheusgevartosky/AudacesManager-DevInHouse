@@ -28,7 +28,7 @@ export class SingupComponent implements OnInit {
   setNewUser(){
     this._service.createUser(this.formSingIn.value)
     .subscribe();
-    this.route.navigate(['/login'])
+    this.route.navigate([''])
   }
 
 }
