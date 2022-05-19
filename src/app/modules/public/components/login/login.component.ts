@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
@@ -23,7 +24,7 @@ export class LoginComponent implements OnInit {
     password: ['', [Validators.required, Validators.minLength(8)]]
   })
 
-  constructor(private fb: FormBuilder, private _service: PublicDatahandlerService) { }
+  constructor(private fb: FormBuilder, private _service: PublicDatahandlerService, private route: Router) { }
 
   ngOnInit(): void {
   }
@@ -32,14 +33,15 @@ export class LoginComponent implements OnInit {
     this._service.getUser(this.formLogin.value.email)
       .subscribe((data: User[]) => {
         this.userObj = data
-        console.log(this.userObj)
       });
     if (this.userObj == null) {
        this.errorMsg = true;
     } else if (this.userObj.senha != this.formLogin.value.password) {
        this.errorMsg = true;
     }else{
-      alert('foi')
+      this.route.navigate(['/private/painel'])
+      console.log('foi')
+
     }
 
 

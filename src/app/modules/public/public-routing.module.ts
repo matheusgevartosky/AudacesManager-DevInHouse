@@ -11,7 +11,12 @@ const routes: Routes = [
   {path:'login', component: LoginComponent},
   {path:'criar', component:SingupComponent},
   {path: 'recuperar', component: RecoverComponent},
-  {path:'**', redirectTo:'login'}
+
+
+  {
+    path:'private',
+    loadChildren:() => import('../private/private.module').then(m => m.PrivateModule)
+  }
 
 ];
 
