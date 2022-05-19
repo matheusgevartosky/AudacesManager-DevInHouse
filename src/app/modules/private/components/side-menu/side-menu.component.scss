@@ -1,0 +1,46 @@
+.Container{
+  background-color: #FEFEFE;
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #EBEBEB;
+}
+.menu{
+  display: grid;
+  justify-content: center;
+}
+ .menubtn{
+   margin: 25px 0;
+   color: #6A7090;
+   padding: 10px;
+ }
+
+ .menubtn:hover{
+   background-color: #EBF0FE;
+   border-radius: 6px;
+   ;
+ }
+
+.logout{
+  margin-top: 225px;
+  padding: 15px;
+}
+
+.logout:hover{
+  background-color: #ff414142;
+  border-radius: 6px;
+}
+
+.logo{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+}
+
+h3{
+  color: #B4B6C1;
+}
