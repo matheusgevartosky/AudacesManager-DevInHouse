@@ -9,8 +9,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 
-
-
 import { PublicRoutingModule } from './public-routing.module';
 import { LoginComponent } from './components/login/login.component';
 import { SingupComponent } from './components/singup/singup.component';
