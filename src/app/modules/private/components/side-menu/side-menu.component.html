@@ -7,19 +7,22 @@
     <mat-divider></mat-divider>
 
     <div class="options">
-      <H3 class="menubtn">Dashboard</H3>
-
       <mat-list>
+      <mat-list-item>
+        <a routerLink="painel" class="menubtn"><p mat-line>Dashboard</p></a>
+      </mat-list-item>
+
+
         <h3 matLine> Cadastros </h3>
         <mat-list-item>
-          <p class="menubtn" >Coleções</p>
+          <a routerLink="colecao" class="menubtn" >Coleções</a>
         </mat-list-item>
         <mat-list-item>
-          <p class="menubtn" >Modelos </p>
+          <a routerLink="produtos" class="menubtn"  >Modelos </a>
         </mat-list-item>
-      </mat-list>
 
-      <mat-list>
+
+
         <h3 matLine> Suporte </h3>
         <mat-list-item>
           <p class="menubtn" >Obter Ajuda</p>

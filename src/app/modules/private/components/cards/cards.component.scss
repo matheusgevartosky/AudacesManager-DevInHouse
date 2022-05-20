@@ -1,18 +1,16 @@
-.card{
-    
-    justify-content: center;
-    align-items: center;
-    width: 245px;
-    height: 80px;
+.card {
+  justify-content: center;
+  align-items: center;
+  width: 245px;
+  height: 80px;
 
-    border-radius: 6px;
-   border: none;
-    background-color:#EBF0FA;
+  border-radius: 6px;
+  border: none;
+  background-color: #ebf0fa;
 }
 
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 40px 0;
-    
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
 }
