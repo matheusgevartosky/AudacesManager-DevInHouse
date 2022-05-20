@@ -1,5 +1,10 @@
-.Container{
-  background-color: aquamarine;
-  width: 33vh;
-  height: 100%;
+.mainCont{
+  display: flex;
 }
+
+.contentCont{
+ flex-grow: 1;
+ margin: 40px;
+}
+
+

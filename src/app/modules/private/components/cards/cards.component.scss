@@ -1,0 +1,18 @@
+.card{
+    
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 80px;
+
+    border-radius: 6px;
+   border: none;
+    background-color:#EBF0FA;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0;
+    
+}

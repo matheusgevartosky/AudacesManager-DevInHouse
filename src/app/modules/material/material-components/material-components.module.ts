@@ -10,6 +10,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatListModule} from '@angular/material/list';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 
 
@@ -26,6 +28,7 @@ import {MatListModule} from '@angular/material/list';
     MatInputModule,
     MatTreeModule,
     MatListModule,
+    MatGridListModule
   ],
   exports:[
     MatToolbarModule,
@@ -36,7 +39,8 @@ import {MatListModule} from '@angular/material/list';
     MatIconModule,
     MatInputModule,
     MatTreeModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule
   ]
 
 })

@@ -2,11 +2,11 @@
   background-color: #FEFEFE;
   width: 220px;
   height: 100%;
-  position: fixed;
   padding: 5px;
   display: flex;
   flex-direction: column;
   border-right: 1px solid #EBEBEB;
+
 }
 .menu{
   display: grid;
@@ -25,7 +25,7 @@
  }
 
 .logout{
-  margin-top: 225px;
+  margin-top: 15vh;
   padding: 15px;
 }
 
