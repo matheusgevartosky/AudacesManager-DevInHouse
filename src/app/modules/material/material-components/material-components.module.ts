@@ -11,8 +11,8 @@ import { MatInputModule } from '@angular/material/input';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
-
-
+import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -28,7 +28,10 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatInputModule,
     MatTreeModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    MatRadioModule,
+    MatSelectModule
+
   ],
   exports:[
     MatToolbarModule,
@@ -40,7 +43,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatInputModule,
     MatTreeModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    MatRadioModule,
+    MatSelectModule
   ]
 
 })
