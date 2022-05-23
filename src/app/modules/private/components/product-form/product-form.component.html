@@ -1,1 +1,53 @@
-<p>product-form works!</p>
+<div>
+  <h1>Criar Coleção</h1>
+</div>
+
+<div [formGroup]="formProduto" class="form">
+  <mat-form-field appearance="fill">
+    <mat-label>Nome do Modelo</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Responsavel pelo Modelo</mat-label>
+    <input matInput formControlName="estacao">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Tipo do Modelo</mat-label>
+    <mat-select >
+      <mat-option value="option1">Option 1</mat-option>
+      <mat-option value="option2" >Option 2 </mat-option>
+      <mat-option value="option3">Option 3</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Selecionar a Coleção</mat-label>
+    <mat-select >
+      <mat-option value="option1">Option 1</mat-option>
+      <mat-option value="option2" >Option 2 </mat-option>
+      <mat-option value="option3">Option 3</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="radio">
+    <mat-radio-group aria-label="Possui Bordado?" class="radio1">
+      <mat-label>Possui Bordado?</mat-label>
+      <mat-radio-button value="1">Sim</mat-radio-button>
+      <mat-radio-button value="2">Não</mat-radio-button>
+    </mat-radio-group>
+</div>
+<div>
+<mat-radio-group aria-label="Pssui Estampa?" >
+      <mat-label>Possui Estampa?</mat-label>
+      <mat-radio-button value="1">Sim</mat-radio-button>
+      <mat-radio-button value="2">Não</mat-radio-button>
+    </mat-radio-group>
+
+  </div>
+
+</div>
+<div class="img">
+  <img src="../../../../../assets/images/image 1.png">
+</div>
+<footer>
+  <button mat-flat-button>Cancelar</button>
+  <button mat-flat-button color="primary" class="button1">Salvar</button>
+</footer>

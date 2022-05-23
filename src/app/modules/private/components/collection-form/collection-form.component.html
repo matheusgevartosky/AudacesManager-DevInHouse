@@ -1,1 +1,37 @@
-<p>collection-form works!</p>
+<div>
+  <h1>Criar Coleção</h1>
+</div>
+
+<div [formGroup]="formColecao" class="form">
+  <mat-form-field appearance="fill">
+    <mat-label>Nome da Coleção</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Para Qual Estação?</mat-label>
+    <input matInput formControlName="estacao">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Qual é o orçamento desta coleção?</mat-label>
+    <input matInput formControlName="orcamento">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Responsável pela Coleção</mat-label>
+    <input matInput formControlName="responsavel">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Para qual Marca você está criando?</mat-label>
+    <input matInput formControlName="marca">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Ano de Lançamento</mat-label>
+    <input matInput formControlName="anoLancamento">
+  </mat-form-field>
+</div>
+<div class="img">
+  <img src="../../../../../assets/images/image 1.png">
+</div>
+<footer>
+  <button mat-flat-button >Cancelar</button>
+  <button mat-flat-button color="primary" class="button1">Salvar</button>
+</footer>

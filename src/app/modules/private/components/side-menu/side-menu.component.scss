@@ -1,12 +1,16 @@
 .Container{
   background-color: #FEFEFE;
   width: 220px;
-  height: 100%;
+  height: 100vh;
   padding: 5px;
   display: flex;
   flex-direction: column;
   border-right: 1px solid #EBEBEB;
 
+}
+
+.options{
+  margin-top: 40px;
 }
 .menu{
   display: grid;
@@ -44,4 +48,5 @@
 
 h3{
   color: #B4B6C1;
+  margin-top: 25px;
 }
