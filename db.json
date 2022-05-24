@@ -13,12 +13,13 @@
   ],
   "colecoes": [
     {
-      "id": 1,
-      "nome": "Coleção 1"
-    },
-    {
-      "id": 2,
-      "nome": "Coleção 2"
+      "name": "teste",
+      "estacao": "teste",
+      "orcamento": "01",
+      "responsavel": "teste",
+      "marca": "teste",
+      "anoLancamento": "teste",
+      "id": 3
     }
   ],
   "usuarios": [
@@ -51,6 +52,13 @@
       "id": "kelin@ketlin",
       "empresa": "ketlin",
       "senha": "ketlin123"
+    },
+    {
+      "nome": "matheus@teste",
+      "id": "matheus@teste",
+      "empresa": "matheus@teste",
+      "senha": "matheus@teste"
     }
-  ]
+  ],
+  "teste": []
 }

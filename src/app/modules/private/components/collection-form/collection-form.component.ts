@@ -1,6 +1,7 @@
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Collection } from '../../interfaces/collection';
+import { CollectServService } from '../../services/collect-serv.service';
 
 @Component({
   selector: 'app-collection-form',
@@ -18,9 +19,15 @@ export class CollectionFormComponent implements OnInit {
     anoLancamento:['',[Validators.required]]
   })
 
-  constructor(private _form: FormBuilder) { }
+  constructor(private _form: FormBuilder, private _service: CollectServService) { }
 
   ngOnInit(): void {
   }
 
+  public createCollection(){
+    if(this.formColecao.valid){
+      this._service.createCollection(this.formColecao.value).subscribe()
+    }
+    return console.error('error')
+  }
 }

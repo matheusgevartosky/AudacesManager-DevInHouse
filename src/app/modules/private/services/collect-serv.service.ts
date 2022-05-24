@@ -22,8 +22,8 @@ export class CollectServService {
     return this._http.put(`${this.url}/${id}`, data)
   }
 
-  public createCollection(data:Collection){
-    this._http.post(this.url, data)
+  createCollection(data:any): Observable<any>{
+    return this._http.post(this.url, data)
   }
 
 }

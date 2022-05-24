@@ -40,8 +40,6 @@ export class LoginComponent implements OnInit {
        this.errorMsg = true;
     }else{
       this.route.navigate(['/private/painel'])
-      console.log('foi')
-
     }
 
 
