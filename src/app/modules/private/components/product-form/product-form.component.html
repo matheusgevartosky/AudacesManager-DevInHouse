@@ -9,39 +9,45 @@
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>Responsavel pelo Modelo</mat-label>
-    <input matInput formControlName="estacao">
+    <input matInput formControlName="responsavel">
   </mat-form-field>
-  <mat-form-field appearance="fill">
+  <mat-form-field appearance="fill" >
     <mat-label>Tipo do Modelo</mat-label>
-    <mat-select >
-      <mat-option value="option1">Option 1</mat-option>
-      <mat-option value="option2" >Option 2 </mat-option>
-      <mat-option value="option3">Option 3</mat-option>
+    <mat-select formControlName="modelo">
+      <mat-option value="Bermuda">Bermuda</mat-option>
+      <mat-option value="Biquini" >Biquini</mat-option>
+      <mat-option value="Bolsa">Bolsa</mat-option>
+      <mat-option value="Bone">Boné</mat-option>
+      <mat-option value="Calca">Calça</mat-option>
+      <mat-option value="calcado">Calçado</mat-option>
+      <mat-option value="Camisa">Camisa</mat-option>
+      <mat-option value="capeu">Chapéu</mat-option>
+      <mat-option value="Saia">Saia</mat-option>
     </mat-select>
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>Selecionar a Coleção</mat-label>
-    <mat-select >
+    <mat-select formControlName="colecao">
       <mat-option value="option1">Option 1</mat-option>
       <mat-option value="option2" >Option 2 </mat-option>
       <mat-option value="option3">Option 3</mat-option>
     </mat-select>
   </mat-form-field>
-  <div class="radio">
-    <mat-radio-group aria-label="Possui Bordado?" class="radio1">
-      <mat-label>Possui Bordado?</mat-label>
-      <mat-radio-button value="1">Sim</mat-radio-button>
-      <mat-radio-button value="2">Não</mat-radio-button>
-    </mat-radio-group>
-</div>
-<div>
-<mat-radio-group aria-label="Pssui Estampa?" >
-      <mat-label>Possui Estampa?</mat-label>
-      <mat-radio-button value="1">Sim</mat-radio-button>
-      <mat-radio-button value="2">Não</mat-radio-button>
-    </mat-radio-group>
 
-  </div>
+
+</div>
+<div class="radio">
+  <mat-radio-group aria-label="Possui Bordado?" formControlName="bordado">
+    <mat-label>Possui Bordado?</mat-label>
+    <mat-radio-button value="1">Sim</mat-radio-button>
+    <mat-radio-button value="2">Não</mat-radio-button>
+  </mat-radio-group>
+
+<mat-radio-group aria-label="Pssui Estampa?" formControlName="estampa">
+    <mat-label>Possui Estampa?</mat-label>
+    <mat-radio-button value="1">Sim</mat-radio-button>
+    <mat-radio-button value="2">Não</mat-radio-button>
+  </mat-radio-group>
 
 </div>
 <div class="img">
@@ -49,5 +55,5 @@
 </div>
 <footer>
   <button mat-flat-button>Cancelar</button>
-  <button mat-flat-button color="primary" class="button1">Salvar</button>
+  <button mat-flat-button color="primary" class="button1" >Salvar</button>
 </footer>

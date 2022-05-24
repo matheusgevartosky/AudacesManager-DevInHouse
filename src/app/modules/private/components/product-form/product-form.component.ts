@@ -10,11 +10,11 @@ export class ProductFormComponent implements OnInit {
 
   public formProduto: FormGroup = this._form.group({
     name:['',[Validators.required]],
-    estacao:['',[Validators.required]] ,
-    orcamento:[0,[Validators.required]],
     responsavel:['',[Validators.required]],
-    marca:['',[Validators.required]],
-    anoLancamento:['',[Validators.required]]
+    modelo:['',[Validators.required]],
+    colecao:['',[Validators.required]],
+    bordado:['',[Validators.required]],
+    estampa:['',[Validators.required]]
   })
 
 
