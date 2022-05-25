@@ -1,17 +1,19 @@
-.demo-table {
+table{
   width: 100%;
 }
 
-.mat-row .mat-cell {
-  border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent;
+td{
+  padding: 20px;
+  color: #9395A3;
+
+}
+
+th{
+  padding: 20px;
+  color:#2B2C33
+}
+
+
+tr:hover{
   cursor: pointer;
-}
-
-.mat-row:hover .mat-cell {
-  border-color: currentColor;
-}
-
-.demo-row-is-clicked {
-  font-weight: bold;
 }

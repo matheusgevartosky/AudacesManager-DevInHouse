@@ -1,6 +1,5 @@
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-import { Collection } from '../../interfaces/collection';
 import { CollectServService } from '../../services/collect-serv.service';
 
 @Component({
@@ -27,6 +26,7 @@ export class CollectionFormComponent implements OnInit {
   public createCollection(){
     if(this.formColecao.valid){
       this._service.createCollection(this.formColecao.value).subscribe()
+      return console.log('sucess')
     }
     return console.error('error')
   }

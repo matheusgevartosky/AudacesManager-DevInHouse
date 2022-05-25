@@ -18,6 +18,15 @@
       "bordado": "false",
       "estampa": "true",
       "id": 3
+    },
+    {
+      "name": "vinishirt",
+      "responsavel": "Fernandinho",
+      "modelo": "Camisa",
+      "colecao": "ViniBoy",
+      "bordado": "true",
+      "estampa": "true",
+      "id": 4
     }
   ],
   "colecoes": [
@@ -65,6 +74,24 @@
       "marca": "DevInHouse",
       "anoLancamento": "1991",
       "id": 7
+    },
+    {
+      "name": "ViniBoy",
+      "estacao": "Inverno",
+      "orcamento": "5.00",
+      "responsavel": "Vini",
+      "marca": "Fernandinho Brands",
+      "anoLancamento": "2022",
+      "id": 8
+    },
+    {
+      "name": "Piukini",
+      "estacao": "Verão",
+      "orcamento": "10.00",
+      "responsavel": "Matheus",
+      "marca": "Pretão Brands",
+      "anoLancamento": "2021",
+      "id": 9
     }
   ],
   "usuarios": [

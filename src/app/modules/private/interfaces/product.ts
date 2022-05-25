@@ -3,6 +3,7 @@ export interface Product {
     responsavel:string,
     modelo:string,
     colecao:string,
-    bordado:string,
-    estampa:string
+    bordado:boolean,
+    estampa:boolean,
+    id:number
 }
