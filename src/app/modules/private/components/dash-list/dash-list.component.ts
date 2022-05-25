@@ -26,24 +26,10 @@ export class DashListComponent  implements OnInit{
     this._service.getAllCollections().subscribe(
       res =>{
         this.AllCollections = res
-        this.adjustCollections()
+        
       }
     )
   };
-
-  adjustCollections(){
-    this.AllCollections.sort((a,b) =>{
-      if(a.orcamento > b.orcamento){
-        return -1
-      }
-      if(a.orcamento < b.orcamento){
-        return 1
-      }
-      return 0
-    })
-  }
-
-
 
 }
 

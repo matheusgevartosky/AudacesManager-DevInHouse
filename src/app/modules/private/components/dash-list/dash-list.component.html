@@ -11,7 +11,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let data of AllCollections | orderPipe: AllCollections.orcamento" class = "text-center">
+      <tr *ngFor="let data of AllCollections | slice: 0:5 | orderPipe: AllCollections " class = "text-center">
         <th scope="row">{{data.id}}</th>
         <td>{{data.name}}</td>
         <td>R$ {{data.orcamento}}</td>
