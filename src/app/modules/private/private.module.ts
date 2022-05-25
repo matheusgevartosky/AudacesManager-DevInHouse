@@ -12,6 +12,7 @@ import { CollectionMainComponent } from './components/collection-main/collection
 import { CollectionFormComponent } from './components/collection-form/collection-form.component';
 import { ProductMainComponent } from './components/product-main/product-main.component';
 import { ProductFormComponent } from './components/product-form/product-form.component';
+import { OrderPipePipe } from './pipes/order-pipe.pipe';
 
 
 
@@ -25,7 +26,8 @@ import { ProductFormComponent } from './components/product-form/product-form.com
     CollectionMainComponent,
     CollectionFormComponent,
     ProductMainComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    OrderPipePipe
   ],
   imports: [
     CommonModule,

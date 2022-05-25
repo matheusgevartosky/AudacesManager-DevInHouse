@@ -19,16 +19,31 @@ export class DashListComponent  implements OnInit{
   constructor(private route: Router, private _service: CollectServService) { }
 
   ngOnInit(): void {
-    this.getAllCollections()
+    this.getAllCollections();
   };
 
    private getAllCollections(){
     this._service.getAllCollections().subscribe(
       res =>{
         this.AllCollections = res
+        this.adjustCollections()
       }
     )
   };
+
+  adjustCollections(){
+    this.AllCollections.sort((a,b) =>{
+      if(a.orcamento > b.orcamento){
+        return -1
+      }
+      if(a.orcamento < b.orcamento){
+        return 1
+      }
+      return 0
+    })
+  }
+
+
 
 }
 

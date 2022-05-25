@@ -31,105 +31,58 @@
   ],
   "colecoes": [
     {
-      "name": "teste",
-      "estacao": "teste",
-      "orcamento": "01",
-      "responsavel": "teste",
-      "marca": "teste",
-      "anoLancamento": "teste",
+      "name": "teste1",
+      "estacao": "verão",
+      "orcamento": "10.000",
+      "responsavel": "Matheus",
+      "marca": "MatheusBrands",
+      "anoLancamento": "2022",
+      "id": 1
+    },
+    {
+      "name": "teste1",
+      "estacao": "verão",
+      "orcamento": "9.000",
+      "responsavel": "Matheus",
+      "marca": "MatheusBrands",
+      "anoLancamento": "2022",
+      "id": 2
+    },
+    {
+      "name": "teste1",
+      "estacao": "verão",
+      "orcamento": "7.000",
+      "responsavel": "Matheus",
+      "marca": "MatheusBrands",
+      "anoLancamento": "2022",
       "id": 3
     },
     {
-      "name": "teste",
-      "estacao": "teste",
-      "orcamento": "0teste",
-      "responsavel": "teste",
-      "marca": "teste",
-      "anoLancamento": "teste",
+      "name": "teste1",
+      "estacao": "verão",
+      "orcamento": "4.000",
+      "responsavel": "Matheus",
+      "marca": "MatheusBrands",
+      "anoLancamento": "2022",
       "id": 4
     },
     {
-      "name": "teste",
-      "estacao": "teste",
-      "orcamento": "789456",
-      "responsavel": "teste",
-      "marca": "teste",
-      "anoLancamento": "1991",
+      "name": "teste1",
+      "estacao": "verão",
+      "orcamento": "11.000",
+      "responsavel": "Matheus",
+      "marca": "MatheusBrands",
+      "anoLancamento": "2022",
       "id": 5
     },
     {
-      "name": "MAtheus",
+      "name": "teste1",
       "estacao": "verão",
-      "orcamento": "1000.00",
+      "orcamento": "10.500",
       "responsavel": "Matheus",
-      "marca": "DevInHouse",
-      "anoLancamento": "1991",
-      "id": 6
-    },
-    {
-      "name": "MAtheus",
-      "estacao": "verão",
-      "orcamento": "1000.00",
-      "responsavel": "Matheus",
-      "marca": "DevInHouse",
-      "anoLancamento": "1991",
-      "id": 7
-    },
-    {
-      "name": "ViniBoy",
-      "estacao": "Inverno",
-      "orcamento": "5.00",
-      "responsavel": "Vini",
-      "marca": "Fernandinho Brands",
+      "marca": "MatheusBrands",
       "anoLancamento": "2022",
-      "id": 8
-    },
-    {
-      "name": "Piukini",
-      "estacao": "Verão",
-      "orcamento": "10.00",
-      "responsavel": "Matheus",
-      "marca": "Pretão Brands",
-      "anoLancamento": "2021",
-      "id": 9
-    }
-  ],
-  "usuarios": [
-    {
-      "nome": "teste",
-      "empresa": "teste",
-      "id": "teste@teste",
-      "senha": "hdw56qde"
-    },
-    {
-      "nome": "teste",
-      "id": "teste@teste.com",
-      "empresa": "teste",
-      "senha": "hdw56qde"
-    },
-    {
-      "nome": "matheus",
-      "id": "matheus@matheus",
-      "empresa": "matheus",
-      "senha": "hdw56qde"
-    },
-    {
-      "nome": "pikini",
-      "id": "pikini@pikini",
-      "empresa": "teste",
-      "senha": "pikiniiiiii"
-    },
-    {
-      "nome": "ketlin",
-      "id": "kelin@ketlin",
-      "empresa": "ketlin",
-      "senha": "ketlin123"
-    },
-    {
-      "nome": "matheus@teste",
-      "id": "matheus@teste",
-      "empresa": "matheus@teste",
-      "senha": "matheus@teste"
+      "id": 6
     }
   ],
   "teste": []

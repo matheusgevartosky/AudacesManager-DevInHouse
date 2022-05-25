@@ -14,13 +14,11 @@ export class ProductMainComponent implements OnInit {
 
   Rows: string[] = ['ModeloID', 'Nome do Modelo', 'Coleção', 'Responsável'];
 
-
   constructor(private route: Router, private _service:ProdServService) { }
 
   ngOnInit(): void {
     this.getAllProds()
   }
-
 
   private getAllProds(){
     this._service.getAllProducts().subscribe(
@@ -29,9 +27,6 @@ export class ProductMainComponent implements OnInit {
       }
     )
   }
-
-
-
 
   goToForm(){
     this.route.navigate(['private/main/addProd'])

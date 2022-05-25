@@ -6,12 +6,12 @@
 <div class="content">
   <table class="table table-hover">
     <thead>
-      <tr >
+      <tr class = "text-center">
         <th scope="col" *ngFor="let row of Rows">{{row}}</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let data of AllCollections">
+      <tr *ngFor="let data of AllCollections"class = "text-center">
         <th scope="row">{{data.id}}</th>
         <td>{{data.name}}</td>
         <td>{{data.estacao}}</td>
