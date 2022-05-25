@@ -6,3 +6,23 @@ header{
 .content{
   margin: 50px 0;
 }
+
+table{
+  width: 100%;
+}
+
+td{
+  padding: 20px;
+  color: #9395A3;
+  
+}
+
+th{
+  padding: 20px;
+  color:#2B2C33
+}
+
+
+tr:hover{
+  cursor: pointer;
+}

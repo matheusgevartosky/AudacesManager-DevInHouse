@@ -1,9 +1,28 @@
+import { HttpClient } from '@angular/common/http';
+import { Product } from './../interfaces/product';
+import { Observable } from 'rxjs';
+import { environment } from './../../../../environments/environment.prod';
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProdServService {
+  private url = environment.PROD_PATH;
 
-  constructor() { }
+  constructor(private _http: HttpClient) { }
+
+  public getAllProducts(): Observable<Product[]>{
+    return this._http.get<Product[]>(this.url)
+  }
+
+  public updateProducts(id:number, data:Product[]){
+    return this._http.put(`${this.url}/${id}`, data)
+  }
+
+  createProducts(data:Product[]): Observable<any>{
+    return this._http.post<Product[]>(this.url, data)
+  }
+
+
 }

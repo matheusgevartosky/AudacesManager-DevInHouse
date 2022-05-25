@@ -12,6 +12,8 @@ export class CollectionMainComponent implements OnInit {
 
   public AllCollections: Collection[] = [];
 
+  Rows: string[] = ['ColeçãoID', 'Nome da Coleção', 'Estação de Lançamento', 'Responsável'];
+
   constructor(private route: Router, private _service: CollectServService) { }
 
   ngOnInit(): void {
@@ -29,5 +31,7 @@ export class CollectionMainComponent implements OnInit {
   goToForm(){
     this.route.navigate(['private/main/addColecao'])
   };
+  
+  
 
 }

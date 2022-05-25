@@ -27,26 +27,24 @@
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>Selecionar a Coleção</mat-label>
-    <mat-select formControlName="colecao">
-      <mat-option value="option1">Option 1</mat-option>
-      <mat-option value="option2" >Option 2 </mat-option>
-      <mat-option value="option3">Option 3</mat-option>
+    <mat-select formControlName="colecao" >
+      <mat-option *ngFor="let item of AllCollections" [value]="item.name">{{item.name}}</mat-option>
     </mat-select>
   </mat-form-field>
 
 
 </div>
-<div class="radio">
+<div class="radio" [formGroup]="formProduto">
   <mat-radio-group aria-label="Possui Bordado?" formControlName="bordado">
     <mat-label>Possui Bordado?</mat-label>
-    <mat-radio-button value="1">Sim</mat-radio-button>
-    <mat-radio-button value="2">Não</mat-radio-button>
+    <mat-radio-button value= true>Sim</mat-radio-button>
+    <mat-radio-button value= false>Não</mat-radio-button>
   </mat-radio-group>
 
 <mat-radio-group aria-label="Pssui Estampa?" formControlName="estampa">
     <mat-label>Possui Estampa?</mat-label>
-    <mat-radio-button value="1">Sim</mat-radio-button>
-    <mat-radio-button value="2">Não</mat-radio-button>
+    <mat-radio-button value= true>Sim</mat-radio-button>
+    <mat-radio-button value= false>Não</mat-radio-button>
   </mat-radio-group>
 
 </div>
@@ -54,6 +52,6 @@
   <img src="../../../../../assets/images/image 1.png">
 </div>
 <footer>
-  <button mat-flat-button>Cancelar</button>
-  <button mat-flat-button color="primary" class="button1" >Salvar</button>
+  <button mat-flat-button >Cancelar</button>
+  <button mat-flat-button color="primary" class="button1" (click)="createProd()">Salvar</button>
 </footer>

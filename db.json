@@ -9,6 +9,15 @@
       "id": 2,
       "nome": "Modelo 2",
       "colecao": 1
+    },
+    {
+      "name": "teste",
+      "responsavel": "teste",
+      "modelo": "Biquini",
+      "colecao": "MAtheus",
+      "bordado": "false",
+      "estampa": "true",
+      "id": 3
     }
   ],
   "colecoes": [
@@ -20,6 +29,42 @@
       "marca": "teste",
       "anoLancamento": "teste",
       "id": 3
+    },
+    {
+      "name": "teste",
+      "estacao": "teste",
+      "orcamento": "0teste",
+      "responsavel": "teste",
+      "marca": "teste",
+      "anoLancamento": "teste",
+      "id": 4
+    },
+    {
+      "name": "teste",
+      "estacao": "teste",
+      "orcamento": "789456",
+      "responsavel": "teste",
+      "marca": "teste",
+      "anoLancamento": "1991",
+      "id": 5
+    },
+    {
+      "name": "MAtheus",
+      "estacao": "verão",
+      "orcamento": "1000.00",
+      "responsavel": "Matheus",
+      "marca": "DevInHouse",
+      "anoLancamento": "1991",
+      "id": 6
+    },
+    {
+      "name": "MAtheus",
+      "estacao": "verão",
+      "orcamento": "1000.00",
+      "responsavel": "Matheus",
+      "marca": "DevInHouse",
+      "anoLancamento": "1991",
+      "id": 7
     }
   ],
   "usuarios": [

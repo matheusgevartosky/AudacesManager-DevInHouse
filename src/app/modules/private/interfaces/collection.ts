@@ -1,8 +1,9 @@
 export interface Collection {
   name:string,
-  season:string,
-  budget:number,
-  responsible:string,
-  brand:string,
-  releasingDate:string
+  estacao:string,
+  orcamento:number,
+  responsavel:string,
+  marca:string,
+  anoLancamento:string
+  id:number
 }

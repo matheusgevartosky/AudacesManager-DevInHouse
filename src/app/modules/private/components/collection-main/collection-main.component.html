@@ -1,37 +1,23 @@
 <header>
   <h1>Coleções</h1>
-<button mat-flat-button color="primary" (click)="goToForm()">Criar Coleção</button>
+  <button mat-flat-button color="primary" (click)="goToForm()">Criar Coleção</button>
 </header>
 
 <div class="content">
   <table class="table table-hover">
     <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+      <tr >
+        <th scope="col" *ngFor="let row of Rows">{{row}}</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
+      <tr *ngFor="let data of AllCollections">
+        <th scope="row">{{data.id}}</th>
+        <td>{{data.name}}</td>
+        <td>{{data.estacao}}</td>
+        <td>{{data.responsavel}}</td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-      </tr>
+
     </tbody>
   </table>
-
 </div>
