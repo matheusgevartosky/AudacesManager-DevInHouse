@@ -20,7 +20,7 @@ export class CollectionMainComponent implements OnInit {
     this.getAllCollections()
   };
 
-   private getAllCollections(){
+   private getAllCollections(): void{
     this._service.getAllCollections().subscribe(
       res =>{
         this.AllCollections = res
@@ -28,7 +28,7 @@ export class CollectionMainComponent implements OnInit {
     )
   };
 
-  goToForm(){
+  goToForm(): void{
     this.route.navigate(['private/main/addColecao'])
   };
   

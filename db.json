@@ -27,71 +27,53 @@
       "bordado": "true",
       "estampa": "true",
       "id": 4
+    },
+    {
+      "name": "agora foi essa merda",
+      "responsavel": "Eu",
+      "modelo": "Bolsa",
+      "colecao": "agora foi essa merda",
+      "bordado": "true",
+      "estampa": "true",
+      "id": 5
     }
   ],
   "colecoes": [
     {
-      "name": "teste1",
-      "estacao": "verão",
-      "orcamento": "10.000",
-      "responsavel": "Matheus",
-      "marca": "MatheusBrands",
-      "anoLancamento": "2022",
-      "id": 1
-    },
-    {
-      "name": "teste1",
-      "estacao": "verão",
-      "orcamento": "9.000",
-      "responsavel": "Matheus",
-      "marca": "MatheusBrands",
-      "anoLancamento": "2022",
-      "id": 2
-    },
-    {
-      "name": "Teste2",
-      "estacao": "inverno",
-      "orcamento": "10.523",
+      "name": "teste",
+      "estacao": "teste",
+      "orcamento": 123,
       "responsavel": "teste",
-      "marca": "matheus",
+      "marca": "123",
       "anoLancamento": "2022",
-      "id": 7
-    },
-    {
-      "name": "teste2",
-      "estacao": "inverno",
-      "orcamento": "8.555",
-      "responsavel": "teste",
-      "marca": "matheus",
-      "anoLancamento": "2022",
-      "id": 8
-    },
-    {
-      "name": "tes",
-      "estacao": "inverno",
-      "orcamento": "15.000",
-      "responsavel": "teste",
-      "marca": "matheus",
-      "anoLancamento": "2022",
-      "id": 9
+      "id": 3
     },
     {
       "name": "teste",
       "estacao": "teste",
-      "orcamento": "20.000",
+      "orcamento": 1,
       "responsavel": "teste",
-      "marca": "teste",
+      "marca": "123",
       "anoLancamento": "2022",
-      "id": 10
+      "id": 4
     },
     {
-      "name": "agora foi essa merda",
-      "estacao": "inverno",
-      "orcamento": "14.524",
-      "responsavel": "Matheus",
-      "marca": "Matheus",
-      "anoLancamento": "2021",
-      "id": 11
+      "name": "teste",
+      "estacao": "teste",
+      "orcamento": 1.234,
+      "responsavel": "teste",
+      "marca": "testee",
+      "anoLancamento": "teste",
+      "id": 5
+    },
+    {
+      "name": "teste",
+      "estacao": "teste",
+      "orcamento": 20000,
+      "responsavel": "teste",
+      "marca": "teste",
+      "anoLancamento": "teste",
+      "id": 6
     }
   ],
   "teste": []
