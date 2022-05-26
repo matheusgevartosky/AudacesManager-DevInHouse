@@ -10,7 +10,7 @@ import { ProdServService } from '../../services/prod-serv.service';
 })
 export class ProductMainComponent implements OnInit {
 
-  public AllProds: Product[] = []
+  public AllProds: Product[] = [];
 
   Rows: string[] = ['ModeloID', 'Nome do Modelo', 'Coleção', 'Responsável'];
 
