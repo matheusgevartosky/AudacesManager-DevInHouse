@@ -1,7 +1,7 @@
 <div class="container">
     <div class="card">
         <span>Coleções</span>
-        <h1>{{collectionLenght}}</h1>
+        <h1>{{AllCollections.length}}</h1>
     </div>
     <div class="card">
         <span>Produtos</span>
@@ -9,7 +9,7 @@
     </div>
     <div class="card">
         <span>Orçamento Médio por Coleção</span>
-        <h1>R$ {{allValues}}</h1>
+        <h1>{{allValues | currency: 'BRL'}}</h1>
     </div>
 </div>
 

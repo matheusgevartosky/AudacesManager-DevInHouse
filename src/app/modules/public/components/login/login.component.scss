@@ -1,6 +1,6 @@
 .main{
-    background-color: #e6eaff;
-    height: 100%;   
+    background-color: #f0f1fa;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,9 +12,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25rem;
-    height: 60%;
+    width: 30rem;
+    height: 26rem;
     background-color: white;
+    border-radius: 8px;
 }
 
 .logo{
@@ -22,15 +23,19 @@
 }
 
 span{
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .mat-form-field{
-    margin: 20px;
-    width:20rem;
+    margin: 7px;
+    width:22rem;
 }
 button{
-    width: 20rem;
+    width: 22rem;
+}
+.mat-flat-button{
+  background-color: #0073CF;
+  margin-top: 25px;
 }
 
 p{

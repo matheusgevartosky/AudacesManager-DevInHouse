@@ -1,3 +1,6 @@
+*{
+  font-family: 'Inter', sans-serif;
+}
 header{
   display: flex;
   justify-content: space-between;
@@ -16,6 +19,7 @@ td{
   padding: 20px;
   color: #9395A3;
 
+
 }
 
 th{
@@ -26,4 +30,5 @@ th{
 
 tr:hover{
   cursor: pointer;
+
 }

@@ -1,6 +1,6 @@
 .main{
-    background-color: #e6eaff;
-    height: 100%;   
+    background-color: #f0f1fa;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,9 +12,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25rem;
-    height: 60%;
+    width: 30rem;
+    height: 25rem;
     background-color: white;
+    border-radius: 8px;
 }
 
 .logo{
@@ -29,8 +30,9 @@ span{
     margin: 20px;
     width:20rem;
 }
-button{
+.mat-flat-button{
     width: 20rem;
+    background-color: #0073CF;
 }
 
 p{

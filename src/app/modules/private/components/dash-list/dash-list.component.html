@@ -14,7 +14,7 @@
       <tr *ngFor="let data of AllCollections | orderPipe: AllCollections | justSlice:0:5 "  class = "text-center">
         <th scope="row">{{data.id}}</th>
         <td>{{data.name}}</td>
-        <td>R$ {{data.orcamento}}</td>
+        <td>{{data.orcamento | currency: 'BRL'}}</td>
         <td>{{data.responsavel}}</td>
       </tr>
 

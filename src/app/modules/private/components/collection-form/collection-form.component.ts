@@ -12,7 +12,7 @@ export class CollectionFormComponent implements OnInit {
   public formColecao: FormGroup = this._form.group({
     name:['',[Validators.required]],
     estacao:['',[Validators.required]] ,
-    orcamento:[0,[Validators.required, Validators.nullValidator]],
+    orcamento:[null,[Validators.required, Validators.nullValidator]],
     responsavel:['',[Validators.required]],
     marca:['',[Validators.required]],
     anoLancamento:['',[Validators.required]]

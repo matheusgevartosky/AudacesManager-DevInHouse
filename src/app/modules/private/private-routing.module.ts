@@ -10,8 +10,9 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 const routes: Routes = [
 
   {
-    path:'main', component: MainComponent,
+    path:'', component: MainComponent,
       children:[
+        {path: '', redirectTo: 'painel'},
         {path: 'painel', component: DashboardComponent},
         {path: 'colecao', component: CollectionMainComponent},
         {path: 'produtos', component: ProductMainComponent},

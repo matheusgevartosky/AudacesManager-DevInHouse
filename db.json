@@ -74,7 +74,29 @@
       "marca": "teste",
       "anoLancamento": "teste",
       "id": 6
+    },
+    {
+      "name": "ViniBoy",
+      "estacao": "Primavera",
+      "orcamento": 50,
+      "responsavel": "Vini",
+      "marca": "Vini",
+      "anoLancamento": "2022",
+      "id": 7
     }
   ],
-  "teste": []
+  "usuarios": [
+    {
+      "nome": "matheus",
+      "id": "matheus@matheus",
+      "empresa": "schulze",
+      "senha": "hdw56qde"
+    },
+    {
+      "nome": "",
+      "id": "unmeQdS",
+      "empresa": "",
+      "senha": ""
+    }
+  ]
 }

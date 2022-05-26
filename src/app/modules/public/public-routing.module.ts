@@ -14,7 +14,7 @@ const routes: Routes = [
 
 
   {
-    path:'private',
+    path:'main',
     loadChildren:() => import('../private/private.module').then(m => m.PrivateModule)
   }
 

@@ -33,15 +33,15 @@ export class LoginComponent implements OnInit {
     this._service.getUser(this.formLogin.value.email)
       .subscribe((data: User[]) => {
         this.userObj = data
-      });
+
     if (this.userObj == null) {
        this.errorMsg = true;
     } else if (this.userObj.senha != this.formLogin.value.password) {
        this.errorMsg = true;
     }else{
-      this.route.navigate(['/private/painel'])
+      this.route.navigate(['/main/'])
     }
-
+  });
 
   }
 

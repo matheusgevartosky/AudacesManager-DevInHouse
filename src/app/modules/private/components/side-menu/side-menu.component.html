@@ -9,26 +9,26 @@
     <div class="options">
       <mat-list>
       <mat-list-item>
-        <a routerLink="painel" class="menubtn"><p mat-line>Dashboard</p></a>
+        <a routerLink="painel" routerLinkActive="selected" class="menubtn">Dashboard</a>
       </mat-list-item>
 
 
         <h3 matLine> Cadastros </h3>
         <mat-list-item>
-          <a routerLink="colecao" class="menubtn" >Coleções</a>
+          <a routerLink="colecao" routerLinkActive="selected" class="menubtn" >Coleções</a>
         </mat-list-item>
         <mat-list-item>
-          <a routerLink="produtos" class="menubtn"  >Modelos </a>
+          <a routerLink="produtos" routerLinkActive="selected" class="menubtn"  >Modelos </a>
         </mat-list-item>
 
 
 
         <h3 matLine> Suporte </h3>
         <mat-list-item>
-          <p class="menubtn" >Obter Ajuda</p>
+          <a class="menubtn" routerLinkActive="selected">Obter Ajuda</a>
         </mat-list-item>
         <mat-list-item>
-          <p  class="menubtn" >Enviar Comentario</p>
+          <a  class="menubtn" routerLinkActive="selected">Enviar Comentario</a>
         </mat-list-item>
       </mat-list>
 

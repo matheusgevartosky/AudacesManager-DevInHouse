@@ -1,5 +1,10 @@
+*{
+  font-family: 'Inter', sans-serif;
+
+}
+
 .Container{
-  background-color: #FEFEFE;
+  background-color: #fbfbfdc4;
   width: 220px;
   height: 100vh;
   padding: 5px;
@@ -49,4 +54,10 @@
 h3{
   color: #B4B6C1;
   margin-top: 25px;
+}
+
+.selected{
+  background-color: #EBF0FE;
+   border-radius: 6px;
+   padding: 11px 25px;
 }

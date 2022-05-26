@@ -1,9 +1,12 @@
+*{
+  font-family: 'Inter', sans-serif;
+}
 .card {
-  justify-content: center;
+padding: 15px;
+justify-content: center;
   align-items: center;
   width: 245px;
   height: 80px;
-
   border-radius: 6px;
   border: none;
   background-color: #ebf0fa;
@@ -13,4 +16,13 @@
   display: flex;
   justify-content: space-around;
   margin: 50px auto;
+}
+
+h1{
+  margin-top: 8px;
+  font-weight: 400;
+}
+
+span{
+  margin-top: 5px;
 }
