@@ -11,7 +11,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let data of AllProds" class = "text-center">
+      <tr *ngFor="let data of AllProds$ | async" class = "text-center">
         <th scope="row">{{data.id}}</th>
         <td>{{data.name}}</td>
         <td>{{data.colecao}}</td>

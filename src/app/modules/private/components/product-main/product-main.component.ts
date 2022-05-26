@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../interfaces/product';
@@ -10,26 +11,17 @@ import { ProdServService } from '../../services/prod-serv.service';
 })
 export class ProductMainComponent implements OnInit {
 
-  public AllProds: Product[] = [];
+  public AllProds$!: Observable<Product[]> 
 
   Rows: string[] = ['ModeloID', 'Nome do Modelo', 'Coleção', 'Responsável'];
 
   constructor(private route: Router, private _service:ProdServService) { }
 
   ngOnInit(): void {
-    this.getAllProds()
-  }
-
-  private getAllProds(){
-    this._service.getAllProducts().subscribe(
-      res =>{
-        this.AllProds = res
-      }
-    )
+    this.AllProds$ = this._service.getAllProducts()
   }
 
   goToForm(){
-    this.route.navigate(['private/main/addProd'])
+    this.route.navigate(['main/addProd'])
   }
-
 }

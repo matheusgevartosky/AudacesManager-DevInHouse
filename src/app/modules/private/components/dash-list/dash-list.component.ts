@@ -1,10 +1,7 @@
+import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { CollectServService } from '../../services/collect-serv.service';
-import { Collection } from '../../interfaces/collection';
-
-
-
 @Component({
   selector: 'app-dash-list',
   templateUrl: './dash-list.component.html',
@@ -12,24 +9,14 @@ import { Collection } from '../../interfaces/collection';
 })
 export class DashListComponent  implements OnInit{
 
-  public AllCollections: Collection[] = [];
+  public AllCollections$!: Observable<any>
 
   Rows: string[] = ['ColeçãoID', 'Nome da Coleção', 'Orçamento', 'Responsável'];
 
   constructor(private route: Router, private _service: CollectServService) { }
 
   ngOnInit(): void {
-    this.getAllCollections();
+    this.AllCollections$ = this._service.getAllCollections()
   };
-
-   private getAllCollections(){
-    this._service.getAllCollections().subscribe(
-      res =>{
-        this.AllCollections = res
-        
-      }
-    )
-  };
-
 }
 
