@@ -30,4 +30,17 @@ export class CollectionFormComponent implements OnInit {
     }
     return console.error('error')
   }
+
+
+
+
+
+
+
+
+  openSnackBar(msg: string) {
+    this._snackBar.open(msg,'', {
+      duration: 5000
+    })
+  }
 }
