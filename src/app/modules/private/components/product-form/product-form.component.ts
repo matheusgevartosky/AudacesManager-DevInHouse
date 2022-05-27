@@ -18,8 +18,6 @@ export class ProductFormComponent implements OnInit {
 
   public AllCollections$!: Observable<any>
   public id: any;
-  public showModal: boolean = false;
-
 
   public formProduto: FormGroup = this._form.group({
     name: ['', [Validators.required]],
@@ -90,6 +88,15 @@ export class ProductFormComponent implements OnInit {
       duration: 5000
     })
   }
+
+  removeProd(){
+    this._service.deleteProduct(this.formProduto.value.id).subscribe()
+    this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} foi deletado! `)
+        setTimeout(() => {
+          this._location.back()
+        }, 2000);
+  }
+
 }
 
 
