@@ -55,7 +55,7 @@ export class ProductFormComponent implements OnInit {
     if (this.formProduto.valid) {
       if (this.formProduto.value.id != null || this.formProduto.value.id != undefined) {
         this._service.updateProducts(this.formProduto.value).subscribe( res => {
-          this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} foi editado! `)
+          this.openSnackBar(`Olá, o modelo '  ${this.formProduto.value.name} - id ${this.formProduto.value.id}' , foi editado! `)
           setTimeout(() => {
             this._location.back()
           }, 2000);
@@ -65,12 +65,12 @@ export class ProductFormComponent implements OnInit {
 )
       } else {
         this._service.createProducts(this.formProduto.value).subscribe( res => {
-          this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} foi editado! `)
+          this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} - id ${this.formProduto.value.id}, foi editado! `)
           setTimeout(() => {
             this._location.back()
           }, 2000);
         }, err => {
-          this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} não foi Editado! Tente Novamente! `)
+          this.openSnackBar(`Olá, o modelo' ${this.formProduto.value.name} - id ${this.formProduto.value.id}' , não foi Editado! Tente Novamente! `)
         }
         )
       }

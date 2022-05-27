@@ -6,15 +6,6 @@
       "colecao": 1
     },
     {
-      "name": "teste",
-      "responsavel": "teste",
-      "modelo": "Calca",
-      "colecao": "MAtheus",
-      "bordado": "false",
-      "estampa": "true",
-      "id": 3
-    },
-    {
       "name": "agora foi essa merda",
       "responsavel": "Eu",
       "modelo": "Bolsa",

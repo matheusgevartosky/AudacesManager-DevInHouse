@@ -57,22 +57,22 @@ export class CollectionFormComponent implements OnInit {
     if (this.formColecao.valid) {
       if (this.formColecao.value.id != null || this.formColecao.value.id != undefined) {
         this._service.updateCollection(this.formColecao.value).subscribe( res => {
-          this.openSnackBar(`Olá, o modelo ${this.formColecao.value.name} foi editado! `)
+          this.openSnackBar(`Olá, o modelo ' ${this.formColecao.value.name} - id ${this.formColecao.value.id} ' , foi editado! `)
           setTimeout(() => {
             this._location.back()
           }, 2000);
         }, err => {
-          this.openSnackBar(`Olá, o modelo ${this.formColecao.value.name} não foi Editado! Tente Novamente! `)
+          this.openSnackBar(`Olá, o modelo ' ' ${this.formColecao.value.name} - id ${this.formColecao.value.id} ',  não foi Editado! Tente Novamente! `)
         }
 )
       } else {
         this._service.createCollection(this.formColecao.value).subscribe( res => {
-          this.openSnackBar(`Olá, o modelo ${this.formColecao.value.name} foi editado! `)
+          this.openSnackBar(`Olá, o modelo '' ${this.formColecao.value.name} - id ${this.formColecao.value.id} ', foi editado! `)
           setTimeout(() => {
             this._location.back()
           }, 2000);
         }, err => {
-          this.openSnackBar(`Olá, o modelo ${this.formColecao.value.name} não foi Editado! Tente Novamente! `)
+          this.openSnackBar(`Olá, o modelo ' ' ${this.formColecao.value.name} - id ${this.formColecao.value.id} ' , não foi Editado! Tente Novamente! `)
         }
         )
       }
