@@ -24,9 +24,11 @@ export class ProdServService {
     return this._http.get<Product>(`${this.url}${id}`)
   }
 
-  createProducts(data:Product[]): Observable<any>{
+  public createProducts(data:Product[]): Observable<any>{
     return this._http.post<Product[]>(this.url, data)
   }
 
-
+  public deleteProduct(id: number): Observable<any>{
+    return this._http.delete<Product>(`${this.url}${id}`)
+  }
 }

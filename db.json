@@ -1,15 +1,6 @@
 {
   "modelos": [
     {
-      "name": "Fernandinho",
-      "responsavel": "ViniBoy",
-      "modelo": "capeu",
-      "colecao": "ViniBoy",
-      "bordado": "true",
-      "estampa": "true",
-      "id": 1
-    },
-    {
       "id": 2,
       "nome": "Modelo 2",
       "colecao": 1
@@ -22,15 +13,6 @@
       "bordado": "false",
       "estampa": "true",
       "id": 3
-    },
-    {
-      "name": "vinishirt",
-      "responsavel": "Fernandinho",
-      "modelo": "capeu",
-      "colecao": "ViniBoy",
-      "bordado": "true",
-      "estampa": "true",
-      "id": 4
     },
     {
       "name": "agora foi essa merda",
@@ -51,33 +33,6 @@
       "id": 6
     },
     {
-      "name": "agora foi essa merda edit",
-      "responsavel": "baixeza",
-      "modelo": "Saia",
-      "colecao": "ViniBoy",
-      "bordado": "false",
-      "estampa": "true",
-      "id": 7
-    },
-    {
-      "name": "MAtheusfsdfdsfdsfdsfdsfdsfds",
-      "responsavel": "rewrwerfadfaf",
-      "modelo": "Calca",
-      "colecao": "teste",
-      "bordado": "true",
-      "estampa": "true",
-      "id": 8
-    },
-    {
-      "name": "agora foi essa merda editadaaaaao 2.0",
-      "responsavel": "Eu",
-      "modelo": "Calca",
-      "colecao": "ViniBoy",
-      "bordado": "true",
-      "estampa": "true",
-      "id": 9
-    },
-    {
       "name": "qwe",
       "responsavel": "12312312",
       "modelo": "Bolsa",
@@ -87,7 +42,7 @@
       "id": 10
     },
     {
-      "name": "vini shirt",
+      "name": "vini shirtwewe",
       "responsavel": "vini",
       "modelo": "Biquini",
       "colecao": "teste",
@@ -103,24 +58,6 @@
       "bordado": "false",
       "estampa": "false",
       "id": 12
-    },
-    {
-      "name": "teste",
-      "responsavel": "teste",
-      "modelo": "Biquini",
-      "colecao": "teste",
-      "bordado": "true",
-      "estampa": "true",
-      "id": 13
-    },
-    {
-      "name": "fsf",
-      "responsavel": "fwfewf",
-      "modelo": "Biquini",
-      "colecao": "teste",
-      "bordado": "true",
-      "estampa": "false",
-      "id": 14
     }
   ],
   "colecoes": [
