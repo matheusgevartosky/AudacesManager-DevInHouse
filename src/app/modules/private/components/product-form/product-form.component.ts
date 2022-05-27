@@ -1,10 +1,8 @@
 import { Observable } from 'rxjs';
 import { Location } from '@angular/common';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { CollectServService } from './../../services/collect-serv.service';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-import { Collection } from '../../interfaces/collection';
 import { ProdServService } from '../../services/prod-serv.service';
 import { Product } from '../../interfaces/product';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -56,17 +54,25 @@ export class ProductFormComponent implements OnInit {
   public createProd() {
     if (this.formProduto.valid) {
       if (this.formProduto.value.id != null || this.formProduto.value.id != undefined) {
-        this._service.updateProducts(this.formProduto.value).subscribe()
-        this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} foi editado! `)
-        setTimeout(() => {
-          this._location.back()
-        }, 5000);
-
-
+        this._service.updateProducts(this.formProduto.value).subscribe( res => {
+          this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} foi editado! `)
+          setTimeout(() => {
+            this._location.back()
+          }, 2000);
+        }, err => {
+          this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} não foi Editado! Tente Novamente! `)
+        }
+)
       } else {
-        this._service.createProducts(this.formProduto.value).subscribe()
-        console.log('criou')
-        this._location.back()
+        this._service.createProducts(this.formProduto.value).subscribe( res => {
+          this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} foi editado! `)
+          setTimeout(() => {
+            this._location.back()
+          }, 2000);
+        }, err => {
+          this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} não foi Editado! Tente Novamente! `)
+        }
+        )
       }
     }
   }

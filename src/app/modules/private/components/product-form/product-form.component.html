@@ -11,11 +11,11 @@
     <mat-label>Responsavel pelo Modelo</mat-label>
     <input matInput formControlName="responsavel">
   </mat-form-field>
-  <mat-form-field appearance="fill" >
+  <mat-form-field appearance="fill">
     <mat-label>Tipo do Modelo</mat-label>
     <mat-select formControlName="modelo">
       <mat-option value="Bermuda">Bermuda</mat-option>
-      <mat-option value="Biquini" >Biquini</mat-option>
+      <mat-option value="Biquini">Biquini</mat-option>
       <mat-option value="Bolsa">Bolsa</mat-option>
       <mat-option value="Bone">Boné</mat-option>
       <mat-option value="Calca">Calça</mat-option>
@@ -27,7 +27,7 @@
   </mat-form-field>
   <mat-form-field appearance="fill">
     <mat-label>Selecionar a Coleção</mat-label>
-    <mat-select formControlName="colecao" >
+    <mat-select formControlName="colecao">
       <mat-option *ngFor="let item of AllCollections$ | async" [value]="item.name">{{item.name}}</mat-option>
     </mat-select>
   </mat-form-field>
@@ -37,14 +37,14 @@
 <div class="radio" [formGroup]="formProduto">
   <mat-radio-group aria-label="Possui Bordado?" formControlName="bordado">
     <mat-label>Possui Bordado?</mat-label>
-    <mat-radio-button value= true>Sim</mat-radio-button>
-    <mat-radio-button value= false>Não</mat-radio-button>
+    <mat-radio-button value=true>Sim</mat-radio-button>
+    <mat-radio-button value=false>Não</mat-radio-button>
   </mat-radio-group>
 
-<mat-radio-group aria-label="Pssui Estampa?" formControlName="estampa">
+  <mat-radio-group aria-label="Pssui Estampa?" formControlName="estampa">
     <mat-label>Possui Estampa?</mat-label>
-    <mat-radio-button value= true>Sim</mat-radio-button>
-    <mat-radio-button value= false>Não</mat-radio-button>
+    <mat-radio-button value=true>Sim</mat-radio-button>
+    <mat-radio-button value=false>Não</mat-radio-button>
   </mat-radio-group>
 
 </div>
@@ -52,8 +52,10 @@
   <img src="../../../../../assets/images/image 1.png">
 </div>
 <footer>
-  <button mat-flat-button class="" color="warn" (click)="removeProd()" *ngIf="id != null"> Excluir</button>
-  <button mat-flat-button >Cancelar</button>
-  <button mat-flat-button color="primary" class="button1" (click)="createProd()">Salvar</button>
-
+  <button mat-flat-button class="" color="warn" class='delete' (click)="removeProd()" *ngIf="id != null">
+    Excluir</button>
+  <div>
+    <button mat-flat-button>Cancelar</button>
+    <button mat-flat-button color="primary" class="button1" (click)="createProd()">Salvar</button>
+  </div>
 </footer>
