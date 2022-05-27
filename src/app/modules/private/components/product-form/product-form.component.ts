@@ -14,7 +14,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ProductFormComponent implements OnInit {
 
-  public AllCollections$!: Observable<any>
+  public AllProds$! : Observable<any>
   public id: any;
 
   public formProduto: FormGroup = this._form.group({
@@ -37,7 +37,7 @@ export class ProductFormComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.AllCollections$ = this._service.getAllProducts();
+    this.AllProds$ = this._service.getAllProducts();
 
     this._router.paramMap.subscribe(
       (params: ParamMap) => {

@@ -25,7 +25,12 @@ export class CollectionMainComponent implements OnInit {
   goToForm(): void{
     this.route.navigate(['main/addColecao'])
   };
-  
-  
+
+  goToEdit(id: number){
+    this.route.navigate(['main/addColecao', id ])
+
+  }
+
+
 
 }

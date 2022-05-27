@@ -1,9 +1,10 @@
+import { Collection } from './../interfaces/collection';
 
 import { Observable } from 'rxjs';
 import { environment } from './../../../../environments/environment.prod';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Collection } from '../interfaces/collection';
+
 
 @Injectable({
   providedIn: 'root'
@@ -18,12 +19,21 @@ export class CollectServService {
     return this._http.get<Collection[]>(this.url)
   }
 
-  public updateCollection(id:any, data:any){
-    return this._http.put(`${this.url}/${id}`, data)
+  public updateCollection(data:any){
+    return this._http.put(`${this.url}${data.id}`, data)
   }
 
-  createCollection(data:any): Observable<any>{
+  public createCollection(data:any): Observable<any>{
     return this._http.post(this.url, data)
   }
 
+  public getByID(id: number){
+    return this._http.get<Collection>(`${this.url}${id}`)
+  }
+
+  public deleteProduct(id: number): Observable<any>{
+    return this._http.delete<Collection>(`${this.url}${id}`)
+  }
 }
+
+

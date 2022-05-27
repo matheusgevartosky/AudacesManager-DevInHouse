@@ -19,7 +19,7 @@
       "responsavel": "Eu",
       "modelo": "Bolsa",
       "colecao": "agora foi essa merda",
-      "bordado": "true",
+      "bordado": "false",
       "estampa": "true",
       "id": 5
     },
@@ -82,7 +82,7 @@
     {
       "name": "ViniBoy",
       "estacao": "Primavera",
-      "orcamento": 50,
+      "orcamento": 55,
       "responsavel": "Vini",
       "marca": "Vini",
       "anoLancamento": "2022",

@@ -17,11 +17,12 @@ const routes: Routes = [
         {path: 'colecao', component: CollectionMainComponent},
         {path: 'produtos', component: ProductMainComponent},
         {path: 'addColecao', component: CollectionFormComponent},
+        {path: 'addColecao/:id', component: CollectionFormComponent},
         {path: 'addProd', component: ProductFormComponent},
         {path: 'addProd/:id', component: ProductFormComponent}
       ]
   },
-  
+
 ];
 
 @NgModule({
