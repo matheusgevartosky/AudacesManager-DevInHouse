@@ -1,11 +1,13 @@
 import { Observable } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { CollectServService } from './../../services/collect-serv.service';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { Collection } from '../../interfaces/collection';
 import { ProdServService } from '../../services/prod-serv.service';
 import { Product } from '../../interfaces/product';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-product-form',
@@ -14,7 +16,10 @@ import { Product } from '../../interfaces/product';
 })
 export class ProductFormComponent implements OnInit {
 
-  public AllCollections: Collection[] = []
+  public AllCollections$!: Observable<any>
+  public id: any;
+  public showModal: boolean = false;
+
 
   public formProduto: FormGroup = this._form.group({
     name: ['', [Validators.required]],
@@ -22,47 +27,55 @@ export class ProductFormComponent implements OnInit {
     modelo: ['', [Validators.required]],
     colecao: ['', [Validators.required]],
     bordado: [false, [Validators.required]],
-    estampa: [false, [Validators.required]]
+    estampa: [false, [Validators.required]],
+    id: null
   })
-
 
   constructor(
     private _form: FormBuilder,
-    private _collection: CollectServService,
     private _service: ProdServService,
-    private _router: ActivatedRoute
-
+    private _router: ActivatedRoute,
+    private _location: Location,
+    private _snackBar: MatSnackBar
   ) { }
 
   ngOnInit(): void {
-    this.getCollection()
-    this._router.params.subscribe(
-      (params: any) => {
-        const id = params['id'];
-        const prod$ = this._service.getByID(id);
-        prod$.subscribe( res => {
-          this.updateProd(res)
-        })
-      }
-    )
+
+    this.AllCollections$ = this._service.getAllProducts();
+
+    this._router.paramMap.subscribe(
+      (params: ParamMap) => {
+        this.id = params.get('id')
+        if(this.id != null){
+          const prod$ = this._service.getByID(this.id);
+          prod$.subscribe(res   => {
+            this.updateForm(res)
+          })
+        }
+      })
   }
 
   public createProd() {
     if (this.formProduto.valid) {
-      this._service.updateProducts(this.formProduto.value).subscribe();
+      if (this.formProduto.value.id != null || this.formProduto.value.id != undefined) {
+        this._service.updateProducts(this.formProduto.value).subscribe()
+        this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} foi editado! `)
+        setTimeout(() => {
+          this._location.back()
+        }, 5000);
+
+
+      } else {
+        this._service.createProducts(this.formProduto.value).subscribe()
+        console.log('criou')
+        this._location.back()
+      }
     }
   }
 
-  getCollection() {
-    this._collection.getAllCollections().subscribe(
-      res => {
-        this.AllCollections = res
-      }
-    )
-  }
-
-  public updateProd(prod: any){
+  public updateForm(prod: Product) {
     this.formProduto.patchValue({
+      id: prod.id,
       name: prod.name,
       responsavel: prod.responsavel,
       modelo: prod.modelo,
@@ -71,4 +84,14 @@ export class ProductFormComponent implements OnInit {
       estampa: prod.estampa
     })
   }
+
+  openSnackBar(msg: string) {
+    this._snackBar.open(msg,'', {
+      duration: 5000
+    })
+  }
 }
+
+
+
+

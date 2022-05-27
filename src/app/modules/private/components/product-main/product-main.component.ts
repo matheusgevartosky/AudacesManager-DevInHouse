@@ -11,7 +11,7 @@ import { ProdServService } from '../../services/prod-serv.service';
 })
 export class ProductMainComponent implements OnInit {
 
-  public AllProds$!: Observable<Product[]> 
+  public AllProds$!: Observable<Product[]>
 
   Rows: string[] = ['ModeloID', 'Nome do Modelo', 'Coleção', 'Responsável'];
 
@@ -27,6 +27,6 @@ export class ProductMainComponent implements OnInit {
 
   goToEdit(id: number){
     this.route.navigate(['main/addProd', id ])
-    
+
   }
 }

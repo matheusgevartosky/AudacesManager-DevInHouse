@@ -13,6 +13,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatListModule,
     MatGridListModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
 
   ],
   exports:[
@@ -45,7 +48,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatListModule,
     MatGridListModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
   ]
 
 })

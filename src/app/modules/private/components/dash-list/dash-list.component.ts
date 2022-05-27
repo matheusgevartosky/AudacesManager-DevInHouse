@@ -2,6 +2,7 @@ import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { CollectServService } from '../../services/collect-serv.service';
+
 @Component({
   selector: 'app-dash-list',
   templateUrl: './dash-list.component.html',
@@ -16,7 +17,7 @@ export class DashListComponent  implements OnInit{
   constructor(private route: Router, private _service: CollectServService) { }
 
   ngOnInit(): void {
-    this.AllCollections$ = this._service.getAllCollections()
+    this.AllCollections$ = this._service.getAllCollections();
   };
 }
 
