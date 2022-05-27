@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { Router } from '@angular/router';
+import {  Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../interfaces/product';
 import { ProdServService } from '../../services/prod-serv.service';
@@ -23,5 +23,10 @@ export class ProductMainComponent implements OnInit {
 
   goToForm(){
     this.route.navigate(['main/addProd'])
+  }
+
+  goToEdit(id: number){
+    this.route.navigate(['main/addProd', id ])
+    
   }
 }

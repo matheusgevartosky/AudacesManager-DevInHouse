@@ -36,6 +36,42 @@
       "bordado": "true",
       "estampa": "true",
       "id": 5
+    },
+    {
+      "name": "agora foi essa merda",
+      "responsavel": "Eu",
+      "modelo": "Bolsa",
+      "colecao": "agora foi essa merda",
+      "bordado": "true",
+      "estampa": "true",
+      "id": 6
+    },
+    {
+      "name": "agora foi essa merda edit",
+      "responsavel": "baixeza",
+      "modelo": "Saia",
+      "colecao": "ViniBoy",
+      "bordado": "false",
+      "estampa": "true",
+      "id": 7
+    },
+    {
+      "name": "MAtheus",
+      "responsavel": "rewrwer",
+      "modelo": "Bolsa",
+      "colecao": "ViniBoy",
+      "bordado": "false",
+      "estampa": "false",
+      "id": 8
+    },
+    {
+      "name": "agora foi essa merda editadaaaaao",
+      "responsavel": "Eu",
+      "modelo": "Bolsa",
+      "colecao": "agora foi essa merda",
+      "bordado": "true",
+      "estampa": "true",
+      "id": 9
     }
   ],
   "colecoes": [

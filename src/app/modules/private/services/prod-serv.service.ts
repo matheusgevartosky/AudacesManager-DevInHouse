@@ -16,8 +16,12 @@ export class ProdServService {
     return this._http.get<Product[]>(this.url)
   }
 
-  public updateProducts(id:number, data:Product[]){
-    return this._http.put(`${this.url}/${id}`, data)
+  public updateProducts(data:Product){
+    return this._http.put(`${this.url}/${data.id}`, data)
+  }
+
+  public getByID(id: number){
+    return this._http.get<Product>(`${this.url}/${id}`)
   }
 
   createProducts(data:Product[]): Observable<any>{
