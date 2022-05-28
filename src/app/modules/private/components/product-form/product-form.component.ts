@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProdServService } from '../../services/prod-serv.service';
 import { Product } from '../../interfaces/product';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { CollectServService } from '../../services/collect-serv.service';
 
 @Component({
   selector: 'app-product-form',
@@ -14,6 +15,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ProductFormComponent implements OnInit {
 
+  public AllCollections$! : Observable<any>
   public AllProds$! : Observable<any>
   public id: any;
 
@@ -32,12 +34,14 @@ export class ProductFormComponent implements OnInit {
     private _service: ProdServService,
     private _router: ActivatedRoute,
     private _location: Location,
-    private _snackBar: MatSnackBar
+    private _snackBar: MatSnackBar,
+    private _collections: CollectServService
   ) { }
 
   ngOnInit(): void {
 
     this.AllProds$ = this._service.getAllProducts();
+    this.AllCollections$ = this._collections.getAllCollections();
 
     this._router.paramMap.subscribe(
       (params: ParamMap) => {

@@ -54,7 +54,11 @@ justify-content: space-around;
 }
  footer{
    display: flex;
-   justify-content: space-between;
+   
+ }
+
+ .defaultBtn{
+   align-self: flex-end;
  }
 
 

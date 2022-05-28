@@ -1,83 +1,24 @@
 {
   "modelos": [
     {
-      "id": 2,
-      "nome": "Modelo 2",
-      "colecao": 1
-    },
-    {
-      "name": "agora foi essa merda",
-      "responsavel": "Eu",
-      "modelo": "Bolsa",
-      "colecao": "agora foi essa merda",
-      "bordado": "false",
-      "estampa": "true",
-      "id": 5
-    },
-    {
-      "name": "agora foi essa merda",
-      "responsavel": "Eu",
-      "modelo": "Bolsa",
-      "colecao": "agora foi essa merda",
-      "bordado": "true",
-      "estampa": "true",
-      "id": 6
-    },
-    {
-      "name": "vini shirtwewe",
-      "responsavel": "vini",
+      "name": "teste",
+      "responsavel": "teste",
       "modelo": "Biquini",
-      "colecao": "teste",
-      "bordado": "true",
-      "estampa": "true",
-      "id": 11
-    },
-    {
-      "name": "teste2",
-      "responsavel": "teste2",
-      "modelo": "Bolsa",
       "colecao": "teste",
       "bordado": "false",
       "estampa": "false",
-      "id": 12
+      "id": 1
     }
   ],
   "colecoes": [
     {
       "name": "teste",
       "estacao": "teste",
-      "orcamento": 123,
-      "responsavel": "teste",
-      "marca": "123",
-      "anoLancamento": "2022",
-      "id": 3
-    },
-    {
-      "name": "teste",
-      "estacao": "teste",
-      "orcamento": 1,
-      "responsavel": "teste",
-      "marca": "123",
-      "anoLancamento": "2022",
-      "id": 4
-    },
-    {
-      "name": "teste",
-      "estacao": "teste",
-      "orcamento": 1.234,
-      "responsavel": "teste",
-      "marca": "testee",
-      "anoLancamento": "teste",
-      "id": 5
-    },
-    {
-      "name": "ViniBoy",
-      "estacao": "Primavera",
-      "orcamento": 55,
-      "responsavel": "Vini",
-      "marca": "Vini",
-      "anoLancamento": "2022",
-      "id": 7
+      "orcamento": 20,
+      "responsavel": "matheus",
+      "marca": "matheus",
+      "anoLancamento": "2021",
+      "id": 1
     }
   ],
   "usuarios": [
@@ -92,6 +33,12 @@
       "id": "unmeQdS",
       "empresa": "",
       "senha": ""
+    },
+    {
+      "nome": "chuchuzim",
+      "id": "chuchu@pikini",
+      "empresa": "pretão",
+      "senha": "hdw56qde"
     }
   ]
 }
