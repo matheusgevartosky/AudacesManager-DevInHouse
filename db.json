@@ -2,8 +2,8 @@
   "modelos": [
     {
       "name": "teste",
-      "responsavel": "teste",
-      "modelo": "Biquini",
+      "responsavel": "2022",
+      "modelo": "Bolsa",
       "colecao": "teste",
       "bordado": "false",
       "estampa": "false",
@@ -14,7 +14,7 @@
     {
       "name": "teste",
       "estacao": "teste",
-      "orcamento": 20,
+      "orcamento": 2000,
       "responsavel": "matheus",
       "marca": "matheus",
       "anoLancamento": "2021",

@@ -105,4 +105,11 @@ export class CollectionFormComponent implements OnInit {
         }, 2000);
   }
 
+  cancel(){
+    this.openSnackBar(`Ação cancelada! `)
+        setTimeout(() => {
+          this._location.back()
+        }, 1000);
+  }
+
 }

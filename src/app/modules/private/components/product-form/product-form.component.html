@@ -55,7 +55,7 @@
   <button mat-flat-button class="" color="warn" class='delete' (click)="removeProd()" *ngIf="id != null">
     Excluir</button>
   <div class="defaultBtn">
-    <button mat-flat-button>Cancelar</button>
+    <button mat-flat-button (click)=cancel()> Cancelar</button>
     <button mat-flat-button color="primary" class="button1" (click)="createProd()">Salvar</button>
   </div>
 </footer>
