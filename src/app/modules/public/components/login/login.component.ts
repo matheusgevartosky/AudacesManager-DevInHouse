@@ -1,5 +1,5 @@
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { User } from '../../interface/user';
@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
     password: ['', [Validators.required, Validators.minLength(8)]]
   })
 
-  constructor(private fb: FormBuilder, private _service: PublicDatahandlerService, private route: Router) { }
+  constructor(private fb: FormBuilder, private _service: PublicDatahandlerService, private route: Router, private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
   }
@@ -33,16 +33,24 @@ export class LoginComponent implements OnInit {
     this._service.getUser(this.formLogin.value.email)
       .subscribe((data: User[]) => {
         this.userObj = data
-
     if (this.userObj == null) {
        this.errorMsg = true;
+       this.openSnackBar("Usuário inexistente")
     } else if (this.userObj.senha != this.formLogin.value.password) {
        this.errorMsg = true;
+       this.openSnackBar("Senha inválida")
     }else{
+      this.openSnackBar("Seja bem vindo!")
       this.route.navigate(['/main/'])
     }
   });
 
+  }
+
+  openSnackBar(msg: string) {
+    this._snackBar.open(msg,'', {
+      duration: 3000
+    })
   }
 
 }
