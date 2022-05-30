@@ -1,44 +1,77 @@
 {
   "modelos": [
     {
-      "name": "teste",
-      "responsavel": "2022",
-      "modelo": "Bolsa",
-      "colecao": "teste",
-      "bordado": "false",
+      "name": "Modelo 1",
+      "responsavel": "Matheus",
+      "modelo": "capeu",
+      "colecao": "Coleção 5",
+      "bordado": "true",
       "estampa": "false",
       "id": 1
+    },
+    {
+      "name": "Modelo 2",
+      "responsavel": "Matheus",
+      "modelo": "Bermuda",
+      "colecao": "Coleção 3 ",
+      "bordado": "false",
+      "estampa": "false",
+      "id": 2
     }
   ],
   "colecoes": [
     {
-      "name": "teste",
-      "estacao": "teste",
-      "orcamento": 2000,
-      "responsavel": "matheus",
-      "marca": "matheus",
-      "anoLancamento": "2021",
+      "name": "Coleção 1",
+      "estacao": "Inverno",
+      "orcamento": 20000,
+      "responsavel": "Matheus",
+      "marca": "Matheus Brands",
+      "anoLancamento": "2022",
       "id": 1
+    },
+    {
+      "name": "Coleção 2",
+      "estacao": "Verão",
+      "orcamento": 21000,
+      "responsavel": "Matheus",
+      "marca": "Matheus",
+      "anoLancamento": "2021",
+      "id": 2
+    },
+    {
+      "name": "Coleção 3 ",
+      "estacao": "Primavera",
+      "orcamento": 13254,
+      "responsavel": "Matheus",
+      "marca": "Matheus Brands",
+      "anoLancamento": "2023",
+      "id": 3
+    },
+    {
+      "name": "Coleção 4",
+      "estacao": "outono",
+      "orcamento": 21.366,
+      "responsavel": "Mathe",
+      "marca": "Matheus Brands",
+      "anoLancamento": "2023",
+      "id": 4
+    },
+    {
+      "name": "Coleção 5",
+      "estacao": "Verão",
+      "orcamento": 35000,
+      "responsavel": "Matheus",
+      "marca": "DevInHouse",
+      "anoLancamento": "1991",
+      "id": 5
     }
   ],
   "usuarios": [
     {
-      "nome": "matheus",
-      "id": "matheus@matheus",
-      "empresa": "schulze",
-      "senha": "hdw56qde"
-    },
-    {
-      "nome": "",
-      "id": "unmeQdS",
-      "empresa": "",
-      "senha": ""
-    },
-    {
-      "nome": "chuchuzim",
-      "id": "chuchu@pikini",
-      "empresa": "pretão",
-      "senha": "hdw56qde"
+      "nome": "admin",
+      "id": "admin@admin",
+      "empresa": "admin",
+      "senha": "admin"
     }
   ]
 }

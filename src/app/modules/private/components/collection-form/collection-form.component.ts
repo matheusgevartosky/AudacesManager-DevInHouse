@@ -67,7 +67,7 @@ export class CollectionFormComponent implements OnInit {
 )
       } else {
         this._service.createCollection(this.formColecao.value).subscribe( res => {
-          this.openSnackBar(`Olá, o modelo '' ${this.formColecao.value.name} - id ${this.formColecao.value.id} ', foi editado! `)
+          this.openSnackBar(`Olá, o modelo '' ${this.formColecao.value.name} - id ${this.formColecao.value.id} ', foi cadastrado! `)
           setTimeout(() => {
             this._location.back()
           }, 2000);

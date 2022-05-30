@@ -69,7 +69,7 @@ export class ProductFormComponent implements OnInit {
 )
       } else {
         this._service.createProducts(this.formProduto.value).subscribe( res => {
-          this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} - id ${this.formProduto.value.id}, foi editado! `)
+          this.openSnackBar(`Olá, o modelo ${this.formProduto.value.name} - id ${this.formProduto.value.id}, foi cadastrado! `)
           setTimeout(() => {
             this._location.back()
           }, 2000);
